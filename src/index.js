@@ -7,7 +7,7 @@ client.once("ready", () => {
   client.user.setActivity("noot noot");
 });
 
-client.login("NzM5MzQ0ODM3ODYxNDQxNTY2.XyZGiQ.8ze6AroQhxxi-Zw2rIQbBOiWE7g");
+client.login("");
 
 let userCooldown = {};
 
@@ -53,6 +53,6 @@ client.on("message", async (message) => {
     }
     setTimeout(() => {
       userCooldown[message.author.id] = false;
-    }, 120000); 
+    }, 120000);
   }
 });
